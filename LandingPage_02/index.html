@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+        <div class="toggle"><img src="images/toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> face</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aut, 
+                officia iste, dolores saepe corrupti labore molestiae excepturi, 
+                totam vel numquam sint culpa dignissimos 
+                ea placeat ipsum? Ipsum, laudantium impedit.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="images/play.png" alt="">watch trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+                <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="images/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="trailer">
+        <video src="https://vod-progressive.akamaized.net/exp=1605798813~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1960%2F18%2F459802291%2F2032938392.mp4~hmac=2da4fa10ef5da2f12b24008a79638915b44d99b9a674f34418059c68833856de/vimeo-prod-skyfire-std-us/01/1960/18/459802291/2032938392.mp4?filename=Forest+-+49981.mp4" controls="true"></video>
+        <img src="images/close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+
+        }
+    </script>
+</body>
+</html>
