@@ -3,7 +3,7 @@ Landing Pages
 
 
 * LandingPage 01  : <https://kiki-ii.github.io/LandingPage_01/LandingPage_01/index.html><br>
-<img src="./langingPage_1.png" width="" height=""></img><br><br>
+<img src="/langingPage_1.png" width="" height=""></img><br><br>
 
 * LandingPage 02  : <https://kiki-ii.github.io/LandingPage_01/LandingPage_02/index.html><br>
 <img src="langingPage_2.png" width="" height=""></img><br><br>
